@@ -8,5 +8,5 @@ program.parse();
 
 const options = program.opts();
 
-const params: Array<number> = options.array.map((it: any) => Number(it));
+const params: number[] = options.array.map((it: string) => Number(it));
 console.log(`Result for ${params} array is ${solution(params)}`);
